@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAM</title>
+    <link rel="shortcut icon" href="/favicon2-32x32.png" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media(max-width:600px) {
+ 
+
+            #hide1{
+                display: none;
+            }
+
+
+
+        }
+
+        body {
+            width: auto;
+            height: auto;
+            background-color: rgb(132, 228, 132);
+        }
+
+        .question {
+            position: relative;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(249, 137, 0);
+            border-radius: 50px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .choose {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            font-size: 190px;
+            gap: 100px;
+        }
+
+        .pic {
+            padding: 8px;
+            font-size: 65px;
+            background-color: antiquewhite;
+            border-radius: 15px;
+            color: grey;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .vid {
+            font-size: 65px;
+            background-color: antiquewhite;
+            border-radius: 15px;
+            padding: 8px;
+            color: grey;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .craf {
+            font-size: 65px;
+            background-color: antiquewhite;
+            border-radius: 15px;
+            padding: 8px;
+            color: grey;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #myvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            border-radius: 15px;
+        }
+        @media(min-width: 600px) {
+            #hide{
+                display: none;
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted id="myvideo">
+        <source src="https://res.cloudinary.com/dlwxllxeb/video/upload/v1685283316/2nd%20page/3_jo387u.mp4" type="video/mp4">
+    </video>
+    <div class="question">DO YOU WANT TO GO BACK TO OUR MEMORIES?</div>
+    <div class="choose">
+        <a href="#">
+            <div class="picture">🖼️</div>
+        </a>
+        <a href="/index4.html" target="_blank" id="hide">
+            <div class="pic">IMAGES</div>
+        </a>
+        <a href="#">
+            <div class="video">🎞️</div>
+        </a>
+        <a href="/index3.html" target="_blank" id="hide">
+            <div class="vid">VIDEOS</div>
+        </a>
+        <a href="#">
+            <div class="craft">🖍️</div>
+        </a>
+        <a href="/index5.html" target="_blank" id="hide">
+            <div class="craf">CRAFTS</div>
+        </a>
+    </div>
+    <div class="choose">
+        <a href="/index4.html" target="_blank" id="hide1">
+            <div class="pic">IMAGES</div>
+        </a>
+        <a href="/index3.html" target="_blank" id="hide1">
+            <div class="vid">VIDEOS</div>
+        </a>
+        <a href="/index5.html" target="_blank" id="hide1">
+            <div class="craf">CRAFTS</div>
+        </a>
+    </div>
+</body>
+
+</html>

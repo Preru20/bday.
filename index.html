@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="shortcut icon" href="/favicon1-32x32.png" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .pic {
+            position: relative;
+            color: rgb(249, 249, 249);
+            font-size: 35px;
+            text-shadow: 2px 2px 4px #ed5454;
+            padding: 1%;
+        }
+
+        p {
+            backface-visibility: hidden;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px #fbffb5;
+        }
+
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .picture {
+            display: inline-block;
+            width: 50%;
+            height: 60vh;
+            /* border: 1px solid #CCC; */
+            perspective: 600px;
+            margin: 20px 0;
+        }
+
+        img {
+            width: 50%;
+            height: 60vh;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transform-origin: center right;
+            transition: 2s;
+        }
+
+        .card.is-flipped {
+            transform: translateX(-100%) rotateY(-180deg);
+        }
+
+        .card_face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: aliceblue;
+            line-height: 260px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            backface-visibility: hidden;
+            border-radius: 30px;
+        }
+
+        .card_face--front {
+            background: 00235B;
+            background-image: url(https://res.cloudinary.com/dkrt7ilhg/image/upload/v1679412509/Webresume/WhatsApp_Image_2023-03-14_at_11.16.44_PM_pdqwes.jpg);
+            background-size: cover;
+
+        }
+
+        .card_face--back {
+        
+            transform: rotateY(180deg);
+            background-image: url(https://res.cloudinary.com/dlwxllxeb/image/upload/v1685283217/front%20images/old_us_yd26kb.jpg);
+            background-size: cover;
+        }
+        #myvideo{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        button{
+            position: relative;
+            text-decoration: none;
+            border: none;
+            border-radius: 1px 1px 18px 18px;
+            background: #00235B;
+            color: wheat;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted id="myvideo">
+        <source src="/res/pexels-nuthan-murarysetty-4894342-1920x1080-30fps.mp4" type="video/mp4">
+    </video>
+
+        <!-- <div class="blur"></div> -->
+        <div class="picture">
+            <div class="card">
+                <p class="wish">Click on the image to see future us 🤭🙈</p>
+            
+                <div class="card_face card_face--front"></div>
+                <div class="card_face card_face--back"></div>
+            </div>
+        </div>
+        <p class="pic">Cheers to more fun, more memories and cake! 🎂</p>
+        <hr style="position: relative;">
+<a href="/index1.html" target="_blank"><button>Let's get in</button></a>
+</body>
+<script>
+    var cards = document.querySelectorAll(".card");
+
+    [...cards].forEach((card) => {
+        card.addEventListener("click", function () {
+            card.classList.toggle("is-flipped")
+        })
+    })
+
+</script>
+
+</html>

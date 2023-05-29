@@ -37,7 +37,7 @@
 
         .picture {
             display: inline-block;
-            width: 50%;
+            width: 100%;
             height: 60vh;
             /* border: 1px solid #CCC; */
             perspective: 600px;
@@ -88,6 +88,7 @@
             transform: rotateY(180deg);
             background-image: url(https://res.cloudinary.com/dlwxllxeb/image/upload/v1685283217/front%20images/old_us_yd26kb.jpg);
             background-size: cover;
+            background-size: 400px 600px
         }
         #myvideo{
             position: fixed;
@@ -116,7 +117,9 @@
     <video autoplay loop muted id="myvideo">
         <source src="/res/pexels-nuthan-murarysetty-4894342-1920x1080-30fps.mp4" type="video/mp4">
     </video>
-
+    
+ <audio src="/bday./Raktha Sambandhagala.mp3" id="my_audio" loop="loop"></audio>
+    
         <!-- <div class="blur"></div> -->
         <div class="picture">
             <div class="card">
@@ -138,6 +141,10 @@
             card.classList.toggle("is-flipped")
         })
     })
+    
+        window.onload= function(){
+        document.querySelector("#my_audio").play();
+    }
 
 </script>
 

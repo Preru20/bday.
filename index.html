@@ -118,7 +118,7 @@
         <source src="https://res.cloudinary.com/dlwxllxeb/video/upload/v1685283242/front%20images/pexels-nuthan-murarysetty-4894342-1920x1080-30fps_vdih3p.mp4" type="video/mp4">
     </video>
     
- <audio src="/bday./Raktha Sambandhagala.mp3" id="my_audio" loop="loop"></audio>
+ <audio src="https://res.cloudinary.com/dlwxllxeb/video/upload/v1685629736/song/Raktha_Sambandhagala_s3fv01.mp3" id="my_audio" loop="loop"></audio>
     
         <!-- <div class="blur"></div> -->
         <div class="picture">
@@ -131,7 +131,7 @@
         </div>
         <p class="pic">Cheers to more fun, more memories and cake! 🎂</p>
         <hr style="position: relative;">
-<a href="/bday./index1.html" target="_blank"><button>Let's get in</button></a>
+<a href="/bday./index1.html" target="_blank"><button id="btn>Let's get in</button></a>
 </body>
 <script>
     var cards = document.querySelectorAll(".card");
@@ -142,9 +142,12 @@
         })
     })
     
-        window.onload= function(){
-        document.querySelector("#my_audio").play();
-    }
+    const bgmusic = document.querySelector("#bg_music")
+    const playbtn = document.querySelector("#btn")
+
+    playbtn.addEventListener("click", function(){
+        bgmusic.play();
+    })
 
 </script>
 
